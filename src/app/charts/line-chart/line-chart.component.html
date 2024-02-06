@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-form-field appearance="outline" class="select">
+    <mat-label>Departments</mat-label>
+    <mat-select [formControl]="departmentSelectionControl">
+      @for (department of departments; track department) {
+      <mat-option [value]="department">{{ department }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <svg class="line-chart"></svg>
+</div>

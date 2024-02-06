@@ -1,0 +1,12 @@
+<div class="container">
+  <mat-form-field appearance="outline" class="select">
+    <mat-label>Departments</mat-label>
+    <mat-select [formControl]="yearSelectionControl">
+      @for (year of years; track year) {
+      <mat-option [value]="year">{{ year }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <svg class="donut-chart"></svg>
+</div>
